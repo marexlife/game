@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(Engine)
+project(engine)
 
 add_library(${PROJECT_NAME}
-    engine.cpp
+)
+
+target_sources(${PROJECT_NAME}  PRIVATE FILE_SET CXX_MODULES FILES
+    engine.ixx
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC

@@ -15,6 +15,7 @@ class Window final {
     void close();
 
    private:
+    bool is_open_ = false;
 };
 }  // namespace game::engine
 #endif  // GAME_ENGINE_WINDOW_H

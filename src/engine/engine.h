@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GAME_ENGINE_ENGINE_H
+#define GAME_ENGINE_ENGINE_H
 
 namespace game::engine {
 class Engine final {
@@ -13,3 +14,5 @@ class Engine final {
     ~Engine();
 };
 }  // namespace game::engine
+
+#endif  // GAME_ENGINE_ENGINE_H

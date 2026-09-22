@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.20)
 project(engine)
 
-add_library(${PROJECT_NAME}
-)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-target_sources(${PROJECT_NAME} PUBLIC FILE_SET CXX_MODULES FILES
-    engine.ixx
+add_library(${PROJECT_NAME}
+    engine.cpp
+    window.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC

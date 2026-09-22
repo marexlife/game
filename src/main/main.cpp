@@ -1,3 +1,7 @@
-import engine;
+#include "engine.h"
 
-int main() {}
+int main() {
+    game::engine::Engine engine{};
+
+    engine.run();
+}

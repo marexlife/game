@@ -1,4 +1,3 @@
+import engine;
 
-int main()
-{
-}
+int main() {}

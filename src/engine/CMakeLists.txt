@@ -4,7 +4,7 @@ project(engine)
 add_library(${PROJECT_NAME}
 )
 
-target_sources(${PROJECT_NAME}  PRIVATE FILE_SET CXX_MODULES FILES
+target_sources(${PROJECT_NAME} PUBLIC FILE_SET CXX_MODULES FILES
     engine.ixx
 )
 
